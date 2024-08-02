@@ -13,7 +13,6 @@ function App() {
       <Navbar/>
       <Banner/>
       <OrderDetails/>
-
       <Footer/>
     </Box>
   );
