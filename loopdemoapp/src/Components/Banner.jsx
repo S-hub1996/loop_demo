@@ -13,17 +13,17 @@ import {
 // And react-slick as our Carousel Lib
 import { Link } from "react-scroll";
 // Settings for the slider
-const settings = {
-  dots: false,
-  arrows: false,
-  fade: true,
-  infinite: true,
-  autoplay: true,
-  speed: 1500,
-  autoplaySpeed: 2500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
+// const settings = {
+//   dots: false,
+//   arrows: false,
+//   fade: true,
+//   infinite: true,
+//   autoplay: true,
+//   speed: 1500,
+//   autoplaySpeed: 2500,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+// };
 
 export default function Banner() {
   // As we have used custom buttons, we need a reference variable to
@@ -81,7 +81,7 @@ export default function Banner() {
             backgroundImage={`url(${card.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
-            <Container align={'center'} size="container.lg" height={["450px","750px"]} position="relative">
+            <Container align={'center'} size="container.lg" height={["250px","750px"]} position="relative">
               <Stack
                 spacing={6}
                 w={"full"}
@@ -95,6 +95,7 @@ export default function Banner() {
                 fontFamily={'fantasy'}
                 fontWeight={'bold'}
                 color="gray.100"
+                mt={10}
                 fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 >
                   {card.title}

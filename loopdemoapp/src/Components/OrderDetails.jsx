@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import TryCard from './TryCard'
 import BonusCard from './BonusCard'
@@ -6,12 +6,12 @@ import SubscriptionCard from './SubscriptionCard'
 
 const OrderDetails = () => {
   return (
-    <Box textAlign={'center'}  mt={20} color={'gray.700'} fontWeight={'semibold'}>
-        <Stack mx={40}>
+    <Box color='green' textAlign={'center'}  mt={[10,20]} fontWeight={'semibold'}>
+        <Stack mx={[0,10,20,40]}>
 
-        <Flex align={'center'} mx={40}>
+        <Flex align={'center'} mx={[10,20,40]}>
             <Text>
-            #6819250395 :  
+            ORDER  -  #6819250395 :  
             </Text>
             <Button ml={'4'} bg={'gray'} color={'green'} borderRadius={'20'} size={'sm'}>Expired</Button>
         </Flex>
@@ -25,9 +25,58 @@ const OrderDetails = () => {
 
         <TryCard/>
         {/* <OrderDetails/> */}
-        <Text>
-            Order Details
-        </Text>
+        <SimpleGrid  columns={[1, null, 2]} spacing='40px'>
+            <Box p={10} rounded={10} border={'1px solid black'}>
+                <Flex>
+
+                <Image border={'1px solid black'} rounded={10} src='https://cdn.shopify.com/s/files/1/0654/7079/1899/products/DIAPER24.png?v=1660651371' w={'100px'}/>
+<Text>
+
+                Baby Diaper | Rash free + Extra Soft
+Subscription discount (10%)
+
+$12.59 <Text textDecoration={'line-through'}>
+
+$13.99
+</Text>
+</Text>
+
+                </Flex>
+
+            </Box>
+            <Box p={10} >
+
+            </Box>
+            <Box p={10} rounded={10} border={'1px solid black'}>
+            Order notes
+            -
+
+            </Box>
+            <Box p={10} rounded={10} border={'1px solid black'}>
+            Subscription plan
+            Deliver every 2 weeks
+            </Box>
+            <Box p={10} rounded={10} border={'1px solid black'}>
+            Shipping address
+Abel Lesle
+1218 San Anselmo Ave
+San Anselmo, California, 94960
+United States
++14157488744
+            </Box>
+            <Box p={10} rounded={10} border={'1px solid black'}>
+            Payment details
+Visa ending in 4242
+Expires 2/29
+Last updated on: May 5, 2023
+
+            </Box>
+
+
+
+        </SimpleGrid>
+        Last update mail sent on: July 24, 2024
+   
 
 
 
