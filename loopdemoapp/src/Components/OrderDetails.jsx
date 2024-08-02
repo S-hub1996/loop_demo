@@ -4,12 +4,15 @@ import TryCard from './TryCard'
 import BonusCard from './BonusCard'
 import SubscriptionCard from './SubscriptionCard'
 import { DrawerButton } from './Drawer'
+import StepperSubs from './Stepper'
 
 const OrderDetails = () => {
     return (
         <Box color='green' textAlign={'center'} mt={[10, 20]} fontWeight={'semibold'}>
             <Stack mx={[0, 10, 20, 40]}>
-
+                <Image src='https://cdn.shopify.com/s/files/1/0654/7079/1899/files/1_eb8c9900-ce31-4402-89b9-dfc2b84b416f.png?v=1722003738'/>
+    
+        
                 <Flex align={'center'} mx={[10, 20, 40]}>
                     <Text>
                         ORDER  -  #6819250395 :

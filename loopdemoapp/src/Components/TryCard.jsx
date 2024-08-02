@@ -15,7 +15,7 @@ const TryCard = () => {
         </Text>
     
       </Stack>
-      <Button size={'md'} w={'200px'} align={'left'} colorScheme="green">
+      <Button size={'md'} w={'200px'} variant={'outline'} align={'left'} colorScheme='green' color="green">
           See all products
           </Button>
     </Stack>
