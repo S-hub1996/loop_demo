@@ -3,6 +3,7 @@ import Banner from "./Components/Banner";
 import MarqueeSlider from "./Components/Marquee";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import OrderDetails from "./Components/OrderDetails";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <MarqueeSlider/>
       <Navbar/>
       <Banner/>
+      <OrderDetails/>
       <Footer/>
     </Box>
   );
