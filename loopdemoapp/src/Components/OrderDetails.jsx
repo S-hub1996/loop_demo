@@ -5,7 +5,38 @@ import BonusCard from './BonusCard'
 import SubscriptionCard from './SubscriptionCard'
 import { DrawerButton } from './Drawer'
 import StepperSubs from './Stepper'
-
+import Carasoul from './Carasoul'
+import Status from './Status'
+export const beers=[
+    {
+        id:'1',
+        image:'https://cdn.shopify.com/s/files/1/0654/7079/1899/files/6.jpg?v=1721999553',
+        title:`Cocunut electrolyte`,
+        mrp:`11.00`,
+        offer:`9.90`
+    },
+    {
+        id:'2',
+        image:"https://cdn.shopify.com/s/files/1/0654/7079/1899/files/8.jpg?v=1721999780",
+        title:`Curacao electrolyte`,
+        mrp:`11.00`,
+        offer:`9.90`
+    },
+    {
+        id:'3',
+        image:'https://cdn.shopify.com/s/files/1/0654/7079/1899/files/2.jpg?v=1721999630',
+        title:`Guava electrolyte`,
+        mrp:`11.00`,
+        offer:`9.90`
+    },
+    {
+        id:'4',
+        image:'https://cdn.shopify.com/s/files/1/0654/7079/1899/files/7.jpg?v=1721999744',
+        title:`Lime electrolyte`,
+        mrp:`11.00`,
+        offer:`9.90`
+    }
+]
 const OrderDetails = () => {
     return (
         <Box color='green' textAlign={'center'} mt={[10, 20]} fontWeight={'semibold'}>
@@ -26,8 +57,9 @@ const OrderDetails = () => {
 
                     Deliver every 2 weeks
                 </Text>
-
+                <Status/>
                 <TryCard />
+                <Carasoul pack={beers}/>
                 {/* <OrderDetails/> */}
 
                 <Flex justifyContent={'space-between'} my={4}>
@@ -37,7 +69,7 @@ const OrderDetails = () => {
                     <DrawerButton/>
                 </Flex>
                 <SimpleGrid columns={[1, null, 2]} spacing='40px'>
-                    <Box p={10} rounded={10} border={'1px solid black'}>
+                    <Box p={10} rounded={10} border={'1px solid gray'}>
                         <Flex>
 
                             <Image border={'1px solid black'} rounded={10} src='https://cdn.shopify.com/s/files/1/0654/7079/1899/products/DIAPER24.png?v=1660651371' w={'100px'} />
@@ -58,16 +90,16 @@ const OrderDetails = () => {
                     <Box p={10} >
 
                     </Box>
-                    <Box p={10} rounded={10} border={'1px solid black'}>
+                    <Box p={10} rounded={10} border={'1px solid gray'}>
                         Order notes
                         -
 
                     </Box>
-                    <Box p={10} rounded={10} border={'1px solid black'}>
+                    <Box p={10} rounded={10} border={'1px solid gray'}>
                         Subscription plan
                         Deliver every 2 weeks
                     </Box>
-                    <Box p={10} rounded={10} border={'1px solid black'}>
+                    <Box p={10} rounded={10} border={'1px solid gray'}>
                         Shipping address
                         Abel Lesle
                         1218 San Anselmo Ave
@@ -75,7 +107,7 @@ const OrderDetails = () => {
                         United States
                         +14157488744
                     </Box>
-                    <Box p={10} rounded={10} border={'1px solid black'}>
+                    <Box p={10} rounded={10} border={'1px solid gray'}>
                         Payment details
                         Visa ending in 4242
                         Expires 2/29
