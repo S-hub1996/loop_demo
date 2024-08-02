@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <Box
       bg={'#0d062b'}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      color={useColorModeValue('gray.100', 'gray.200')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
