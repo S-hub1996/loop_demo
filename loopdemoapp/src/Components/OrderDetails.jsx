@@ -48,7 +48,7 @@ const OrderDetails = () => {
                     <Text>
                         ORDER  -  #6819250395 :
                     </Text>
-                    <Button ml={'4'} bg={'gray'} color={'green'} borderRadius={'20'} size={'sm'}>Expired</Button>
+                    <Button _hover={'none'} variant={'solid'} ml={'4'} bg={'green'} color={'yellow'} borderRadius={'20'} size={'sm'}>Active</Button>
                 </Flex>
                 <Text>
                     $12.59 + $0 shipping
