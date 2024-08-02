@@ -4,6 +4,7 @@ import MarqueeSlider from "./Components/Marquee";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import OrderDetails from "./Components/OrderDetails";
+import SubscriptionCard from "./Components/SubscriptionCard";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <OrderDetails/>
+
       <Footer/>
     </Box>
   );

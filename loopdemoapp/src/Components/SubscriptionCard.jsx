@@ -11,9 +11,8 @@ import {
 
 const SubscriptionCard = () => {
   return (
-    <Container w={'100%'} bgColor={'#7439fe'}>
+    <Box w={'100%'} bgColor={'#7439fe'} py={4}>
     <Stack 
-    
       as={Box}
       textAlign={'center'}
       spacing={{ base: 8, md: 14 }}
@@ -57,7 +56,7 @@ Turn your customers into subscribers and drive recurring revenue for your DTC br
         
       </Stack>
     </Stack>
-  </Container>
+  </Box>
   )
 }
 

@@ -81,11 +81,13 @@ Last updated on: May 5, 2023
 
 
         <BonusCard/>
-        <SubscriptionCard/>
+    
+    
 
 
 
         </Stack>
+        <SubscriptionCard/>
     </Box>
   )
 }
